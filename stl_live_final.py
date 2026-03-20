@@ -220,6 +220,19 @@ if run_analysis_button and df is not None:
     if save_snapshot:
         ts = insert_snapshot(result_df[["channel", "visitors", "purchases", "revenue"]])
         st.success(f"Snapshot saved at {ts} UTC.")
+st.markdown("## Alerts")
+
+if alerts:
+    for alert in alerts:
+        st.error(alert)
+else:
+    st.success("No critical issues detected.")
+
+
+    
+        
+
+    
 
     st.markdown("---")
     st.markdown("## System Health")

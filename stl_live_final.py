@@ -6,6 +6,21 @@ from datetime import datetime
 import pandas as pd
 import streamlit as st
 st.set_page_config(page_title="STL LIVE — Structured Intelligence Engine", layout="wide")
+# 🧭 SIDEBAR NAVIGATION
+st.sidebar.title("STL LIVE")
+
+page = st.sidebar.radio(
+    "Navigation",
+    [
+        "Dashboard",
+        "Blueprint",
+        "Tracking",
+        "Client Mode",
+        "Architect Mode",
+        "Global Shock",
+        "Control Layer"
+    ]
+)
 APP_DIR = Path(__file__).resolve().parent
 DB_PATH = APP_DIR / "stl_live.db"
 

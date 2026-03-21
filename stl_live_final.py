@@ -5,11 +5,11 @@ from datetime import datetime
 
 import pandas as pd
 import streamlit as st
-
+st.set_page_config(page_title="STL LIVE — Structured Intelligence Engine", layout="wide")
 APP_DIR = Path(__file__).resolve().parent
 DB_PATH = APP_DIR / "stl_live.db"
 
-st.set_page_config(page_title="STL LIVE — Structured Intelligence Engine", layout="wide")
+
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)

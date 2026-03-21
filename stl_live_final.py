@@ -341,4 +341,4 @@ elif page == "Global Shock":
 elif page == "Control Layer":
     st.title("🛡 Control Layer")
     
-st.markdown("---")
+st.markdown("___")

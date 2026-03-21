@@ -1,4 +1,4 @@
-# fix 
+#fix
 import sqlite3
 from pathlib import Path
 from datetime import datetime
@@ -340,3 +340,4 @@ elif page == "Global Shock":
 
 elif page == "Control Layer":
     st.title("🛡 Control Layer")
+st.markdown("---")

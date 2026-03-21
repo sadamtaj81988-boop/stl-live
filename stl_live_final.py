@@ -318,3 +318,25 @@ else:
     pivot = grouped.pivot(index="ts", columns="channel", values=trend_metric).fillna(0)
     st.line_chart(pivot)
     st.caption(f"Latest snapshot: {grouped['ts'].max()} UTC")
+    # 👇 VERY BOTTOM OF FILE
+
+if page == "Dashboard":
+    st.title("📊 STL LIVE Dashboard")
+
+elif page == "Blueprint":
+    st.title("🧠 STL Blueprint")
+
+elif page == "Tracking":
+    st.title("📊 STL Tracking")
+
+elif page == "Client Mode":
+    st.title("💼 Client Mode")
+
+elif page == "Architect Mode":
+    st.title("⚙️ Architect Mode")
+
+elif page == "Global Shock":
+    st.title("🌍 Global Shock")
+
+elif page == "Control Layer":
+    st.title("🛡 Control Layer")

@@ -1,0 +1,14 @@
+def STL_engine(data):
+    fragments = detect_fragments(data)
+    clean = process_data(data)
+    valid = validate(clean)
+    output = aggregate(clean)
+    hydro = hydro_score(data, clean)
+
+    return {
+        "fragments": fragments,
+        "clean_data": clean,
+        "valid": valid,
+        "output": output,
+        "hydro_score": hydro
+    }
